@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6bc3ff;
+  background: #cf99c9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2666,4 +2666,27 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+.site-title {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 36px;
+  font-size: 48px;
+  font-weight: normal;
+  font-family: 'Lobster Two', 'Roboto Slab', "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+.menu .menu-item a {
+  padding: 0 10px;
+  border: none;
+  border-radius: 2px;
+  transition-property: background;
+  display: block;
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: inherit;
+  border-bottom: 1px solid transparent;
+  transition-property: border-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
 }
