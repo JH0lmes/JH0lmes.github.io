@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff;
+  background: #52adff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2667,13 +2667,17 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
+@font-face {
+  font-family: FREEBSC_;
+  src: url("/fonts/FREEBSC_.ttf");
+}
 .site-title {
   display: inline-block;
   vertical-align: top;
   line-height: 36px;
   font-size: 48px;
   font-weight: normal;
-  font-family: 'Comic Sans MS', 'Lobster Two', 'Roboto Slab', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'FREEBSC_', 'Comic Sans MS', 'Lobster Two', 'Roboto Slab', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .menu {
   margin-top: 20px;
@@ -2684,6 +2688,21 @@ body {
   margin-right: auto;
   width: 470px;
   border-radius: initial;
+}
+.site-meta {
+  padding: 20px 0;
+  color: #fff;
+  background: $blue-dodger;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-meta {
+    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+  }
+}
+@media (max-width: 767px) {
+  .site-meta {
+    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+  }
 }
 .menu .menu-item a {
   padding: 0 10px;
