@@ -19,7 +19,7 @@
     
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+  <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -52,6 +52,38 @@
 
 
 
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="https://fonts.cat.net/css?family=Roboto Slab:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
@@ -72,6 +104,10 @@
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
 
 
+  <link rel="manifest" href="/images/manifest.json">
+
+
+  <meta name="msapplication-config" content="/images/browserconfig.xml" />
 
 
 
@@ -107,7 +143,7 @@
     root: '/',
     scheme: 'Muse',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":true,"transition":{"post_block":"perspectiveLeftIn","post_header":"fadeIn","post_body":"fadeIn","coll_header":"perspectiveLeftIn","sidebar":"slideUpIn"}},
@@ -170,7 +206,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">CRISTIANO RONALDO</p>
       
   </div>
 
@@ -319,9 +355,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/uncategorized/2018/12/01/前端总览.html" itemprop="url">
+            <a class="post-title-link" href="/个人简介/2018/12/03/个人座右铭.html" itemprop="url">
               
-                <span itemprop="name">前端总览</span>
+                <span itemprop="name">世上最难的莫过于说起来最容易的坚持。</span>
               
             </a>
         
@@ -329,9 +365,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2018-12-01T14:21:58+08:00"
-              content="2018-12-01" >
-          12-01
+              datetime="2018-12-03T10:21:22+08:00"
+              content="2018-12-03" >
+          12-03
         </time>
       </div>
 
@@ -356,9 +392,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/uncategorized/2018/12/01/ionic项目实战.html" itemprop="url">
+            <a class="post-title-link" href="/个人简介/2018/12/01/前端总览.html" itemprop="url">
               
-                <span itemprop="name">ionic项目实战</span>
+                <span itemprop="name">something about 前端</span>
               
             </a>
         
@@ -366,7 +402,7 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2018-12-01T14:19:52+08:00"
+              datetime="2018-12-01T14:21:58+08:00"
               content="2018-12-01" >
           12-01
         </time>
@@ -409,6 +445,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -419,9 +457,11 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+			<a href="/">
               <img class="site-author-image" itemprop="image"
-                src="/images/avatar.gif"
+                src="/uploads/avatar.gif"
                 alt="JHolmes" />
+			</a>	
             
               <p class="site-author-name" itemprop="name">JHolmes</p>
               <p class="site-description motion-element" itemprop="description">学到老活到老。</p>
@@ -451,15 +491,6 @@
               </div>
             
 
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
             
 
           </nav>
@@ -566,29 +597,27 @@
       <div class="footer-inner">
         <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+  <span class="with-love" id="heart">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">JHolmes</span>
 
   
 </div>
+<!--
 
 
   <div class="powered-by">
     <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv"> 本站访客数: <span id="busuanzi_value_site_uv"></span>
 	</span>
   </div>
+-->
 <!--
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
-  <span class="post-meta-divider">|</span>
 
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
 
 -->
 
@@ -1099,5 +1128,12 @@
 
   <script type="text/javascript" src="/lib/clipboard/clipboard.js"></script>
 <script type="text/javascript" src="/js/src/custom.js"></script>
+//  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>;
+//  <script>
+//  $("body").backstretch("http://pj5o2ydto.bkt.clouddn.com/cr7.jpg");
+//  </script>
+  <script type="text/javascript" src= "/js/src/instantclick.min.js" data-no-instant></script>
+  <script data-no-instant>InstantClick.init();</script>
+  <script type="text/javascript" src="/js/src/clicklove.js"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":80,"height":160},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>

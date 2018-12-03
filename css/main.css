@@ -185,7 +185,7 @@ th {
 }
 body {
   position: relative;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Slab', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 14px;
   line-height: 2;
   color: #555;
@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Slab', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 h2,
 h3,
@@ -445,11 +445,11 @@ body {
 .header-inner {
   margin: 0 auto;
   padding: 100px 0 70px;
-  width: 700px;
+  width: 780px;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
-    width: 900px;
+    width: 980px;
   }
 }
 .main {
@@ -457,11 +457,11 @@ body {
 }
 .main-inner {
   margin: 0 auto;
-  width: 700px;
+  width: 780px;
 }
 @media (min-width: 1600px) {
   .container .main-inner {
-    width: 900px;
+    width: 980px;
   }
 }
 .footer {
@@ -474,11 +474,11 @@ body {
 .footer-inner {
   box-sizing: border-box;
   margin: 20px auto;
-  width: 700px;
+  width: 780px;
 }
 @media (min-width: 1600px) {
   .container .footer-inner {
-    width: 900px;
+    width: 980px;
   }
 }
 pre,
@@ -493,7 +493,7 @@ pre,
 }
 pre,
 code {
-  font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
+  font-family: 'Roboto Mono', consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
 }
 code {
   padding: 2px 4px;
@@ -1122,12 +1122,14 @@ pre .javascript .function {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .back-to-top {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 @media (max-width: 767px) {
   .back-to-top {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 .back-to-top.back-to-top-on {
@@ -1175,7 +1177,7 @@ pre .javascript .function {
   line-height: 36px;
   font-size: 20px;
   font-weight: normal;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Slab', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -1263,7 +1265,7 @@ pre .javascript .function {
   opacity: 0;
 }
 .post-body {
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Slab', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 @media (max-width: 767px) {
   .post-body {
@@ -1541,7 +1543,7 @@ pre .javascript .function {
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
   color: #999;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Slab', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   text-align: center;
 }
@@ -1556,6 +1558,9 @@ pre .javascript .function {
 .posts-expand .post-meta .post-description {
   font-size: 14px;
   margin-top: 2px;
+}
+.post-wordcount {
+  display: inline-block;
 }
 .post-meta-divider {
   margin: 0 0.5em;
@@ -1727,16 +1732,6 @@ pre .javascript .function {
 .sidebar a:hover {
   color: #eee;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .sidebar {
-    display: none !important;
-  }
-}
-@media (max-width: 767px) {
-  .sidebar {
-    display: none !important;
-  }
-}
 .sidebar-inner {
   position: relative;
   padding: 20px 10px;
@@ -1765,12 +1760,14 @@ pre .javascript .function {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar-toggle {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 @media (max-width: 767px) {
   .sidebar-toggle {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 .sidebar-toggle-line {
@@ -1873,7 +1870,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #70ff1b;
+  background: #dfff96;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1992,6 +1989,32 @@ pre .javascript .function {
 }
 .post-toc .nav .active-current > a:hover {
   color: #87daff;
+}
+.sidebar-active #sidebar-dimmer {
+  opacity: 0.7;
+  -webkit-transform: translateX(-150%);
+  -webkit-transform: translateX(-150%);
+  -moz-transform: translateX(-150%);
+  -ms-transform: translateX(-150%);
+  -o-transform: translateX(-150%);
+  transform: translateX(-150%);
+  transition: opacity 0.2s;
+}
+#sidebar-dimmer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 200%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0s 0.2s;
+}
+@media (max-width: 767px) {
+  #sidebar-dimmer {
+    display: block;
+  }
 }
 .footer {
   font-size: 14px;
@@ -2718,23 +2741,13 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
-@font-face {
-  font-family: FREEBSC_;
-  src: url("/fonts/FREEBSC_.ttf");
-}
-.site-title {
-  display: inline-block;
-  vertical-align: top;
-  line-height: 36px;
-  font-size: 48px;
-  font-weight: normal;
-  color: black-deep;
-  font-family: 'FREEBSC_', 'Comic Sans MS', 'Lobster Two', 'Roboto Slab', "PingFang SC", "Microsoft YaHei", sans-serif;
-}
 .headband {
   height: 1.5px;
-  background-image: linear-gradient(90deg, #fff 50%, #000 0);
-  background-size: 120px 100%;
+  background-image: linear-gradient(90deg, #000 50%, #fff 0);
+  background-size: 66.67% 100%;
+}
+#instantclick {
+  display: none;
 }
 .header {
   line-height: 1.5;
@@ -2759,31 +2772,37 @@ body {
   width: 100%;
 }
 .site-meta {
-  background-image: linear-gradient(90deg, #fff 50%, #000 0);
-  background-size: 120px 100%;
+  background-image: linear-gradient(90deg, #000 50%, #fff 0);
+  background-size: 66.67% 100%;
 }
 .brand {
   background-color: rgba(255,255,255,0);
   margin-top: 15px;
   padding: 0px;
 }
+@font-face {
+  font-family: FREEBSC_;
+  src: url("/fonts/FREEBSC_.ttf");
+}
 .site-title {
-  font-size: 75px;
+  font-size: 88px;
+  font-family: 'FREEBSC_', 'Comic Sans MS', 'Lobster Two', 'Roboto Slab', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
-  color: #ffd700;
-  line-height: 80px;
+  color: #000;
+  line-height: 100px;
   letter-spacing: 3px;
 }
 .site-subtitle {
   margin: 0px;
   font-size: 16px;
+  font-style: italic;
   letter-spacing: 1px;
   padding-bottom: 3px;
   font-weight: bold;
-  color: #fff;
+  color: #000;
   border-bottom-width: 3px;
   border-bottom-style: solid;
-  border-bottom-color: #a166ab;
+  border-bottom-color: #006e00;
 }
 .menu {
   text-align: center;
@@ -2792,6 +2811,18 @@ body {
   padding: 5px;
   background-color: rgba(255,255,255,0.75);
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.15);
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #eead0e;
+}
+.footer {
+  line-height: 1.5;
+  background-color: rgba(255,255,255,0.75);
+  color: #333;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #b22222;
+  box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.15);
 }
 .menu .menu-item a {
   font-size: 15px;
@@ -2863,15 +2894,6 @@ body {
 }
 .pagination .space {
   color: #fff;
-}
-.footer {
-  line-height: 1.5;
-  background-color: rgba(255,255,255,0.75);
-  color: #333;
-  border-top-width: 3px;
-  border-top-style: solid;
-  border-top-color: #a166ab;
-  box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.15);
 }
 .posts-expand .post-tags a {
   border-bottom: none;
@@ -3046,7 +3068,6 @@ pre .deletion {
   margin-bottom: 10px;
   margin-top: 15px;
   color: rgba(7,179,155,0.75);
-  margin-left: 6px;
   font-size: 15px;
   font-weight: bold;
 }
