@@ -1870,7 +1870,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #32d253;
+  background: #678f74;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3340,6 +3340,15 @@ span#inline-toc {
 }
 img.img-topic {
   width: 100%;
+}
+.aplayer {
+  font-family: Lato, -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STHeiti, "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", "Droid Sans Fallback", "Microsoft YaHei", sans-serif !important;
+}
+.aplayer-withlrc.aplayer .aplayer-info {
+  background-color: #fff;
+}
+.aplayer .aplayer-list ol {
+  background-color: #fff;
 }
 .post-sticky-flag {
   font-size: inherit;
