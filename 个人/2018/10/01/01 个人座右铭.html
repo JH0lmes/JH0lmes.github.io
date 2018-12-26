@@ -434,7 +434,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  643
+                  653
                 </span>
               
 
@@ -470,7 +470,9 @@
 			<script>
 				var options = {"narrow":false,"autoplay":false,"showlrc":3,"mutex":true,"music":[{"title":"Viva La Vida","author":"Coldplay","url":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/Coldplay%20-%20Viva%20La%20Vida.mp3","pic":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/Coldplay%20-%20Viva%20La%20Vida.png","lrc":"https:JH0lmes.github.io/uploads/lyrics/Coldplay%20-%20Viva%20La%20Vida.lrc"},{"title":"FLY","author":"ANU","url":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/ANU%20-%20FLY-%E9%A3%9E.mp3","pic":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/ANU%20-%20FLY-%E9%A3%9E.png","lrc":"https:JH0lmes.github.io/uploads/lyrics/ANU%20-%20FLY-飞.lrc"},{"title":"Summer","author":"Calvin Harris","url":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/Calvin%20Harris%20-%20Summer.mp3","pic":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/Calvin%20Harris%20-%20Summer.png","lrc":"https:JH0lmes.github.io/uploads/lyrics/Calvin%20Harris%20-%20Summer.lrc"},{"title":"Sketch Plane","author":"Cam Kelley","url":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/Cam%20Kelley%20-%20Sketch%20Plane.mp3","pic":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/Cam%20Kelley%20-%20Sketch%20Plane.png","lrc":"https:JH0lmes.github.io/uploads/lyrics/Cam%20Kelley%20-%20Sketch%20Plane.lrc"},{"title":"Rooftops","author":"JJ Weeks Band,Tedashii","url":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/JJ%20Weeks%20Band%2CTedashii%20-%20Rooftops.mp3","pic":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/JJ%20Weeks%20Band%2CTedashii%20-%20Rooftops.png","lrc":"https:JH0lmes.github.io/uploads/lyrics/JJ%20Weeks%20Band%2CTedashii%20-%20Rooftops.lrc"},{"title":"If I Fail","author":"Mono Inc","url":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/Mono%20Inc.%20-%20If%20I%20Fail.mp3","pic":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/Mono%20Inc.%20-%20If%20I%20Fail.png","lrc":"https:JH0lmes.github.io/uploads/lyrics/mono%20Inc%20-%20If%20I%20Fail.lrc"},{"title":"When We Stand Together","author":"Nickelback","url":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/Nickelback%20-%20When%20We%20Stand%20Together.mp3","pic":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/Nickelback%20-%20When%20We%20Stand%20Together.png","lrc":"https:JH0lmes.github.io/uploads/lyrics/Nickelback%20-%20When%20We%20Stand%20Together.lrc"},{"title":"Shut Up and Dance","author":"Walk The Moon","url":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/Walk%20The%20Moon%20-%20Shut%20Up%20and%20Dance.mp3","pic":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/Walk%20The%20Moon%20-%20Shut%20Up%20and%20Dance.png","lrc":"https:JH0lmes.github.io/uploads/lyrics/Walk%20The%20Moon%20-%20Shut%20Up%20and%20Dance.lrc"},{"title":"Fire","author":"Gavin Degraw","url":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/Gavin%20Degraw%20-%20Fire.mp3","pic":"http://jholmes.oss-cn-shanghai.aliyuncs.com/01%20Motto/Gavin%20Degraw%20-%20Fire.png","lrc":"https:JH0lmes.github.io/uploads/lyrics/Gavin%20Degraw%20-%20Fire.lrc"}]};
 				options.element = document.getElementById("aplayer0");
-				new APlayer(options);
+				var ap = new APlayer(options);
+				window.aplayers || (window.aplayers = []);
+				window.aplayers.push(ap);
 			</script>
 
 		

@@ -432,7 +432,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.6k
+                  1.7k
                 </span>
               
 
@@ -517,7 +517,7 @@
 [03:40.47]Once I was seven years old(&#x90A3;&#x5E74;&#x6211;&#x4E03;&#x5C81;)
 [03:48.40]Once I was seven years old(&#x90A3;&#x5E74;&#x6211;&#x4E03;&#x5C81;)</pre></div>
 		<script>
-			new APlayer({
+			var ap = new APlayer({
 				element: document.getElementById("aplayer1"),
 				narrow: false,
 				autoplay: false,
@@ -529,6 +529,8 @@
 					pic: "http://jholmes.oss-cn-shanghai.aliyuncs.com/1%20HelloWorld/Five-Hundred-Miles.jpg",
 				}
 			});
+			window.aplayers || (window.aplayers = []);
+			window.aplayers.push(ap);
 		</script>
 <p>Test list</p>
 
@@ -536,7 +538,9 @@
 			<script>
 				var options = {"narrow":false,"autoplay":false,"showlrc":3,"mutex":true,"music":[{"title":"7 Years","author":"Lukas Graham","url":"http://jholmes.oss-cn-shanghai.aliyuncs.com/1%20HelloWorld/Lukas%20Graham%20-%207%20Years.mp3","pic":"http://jholmes.oss-cn-shanghai.aliyuncs.com/1%20HelloWorld/Lukas%20Graham%20-%207%20Years.png","lrc":"http://jholmes.oss-cn-shanghai.aliyuncs.com/00_Introduction/7-Years.lrc"},{"title":"The Nights","author":"Avicii","url":"http://jholmes.oss-cn-shanghai.aliyuncs.com/1%20HelloWorld/Avicii%20-%20The%20Nights%20%28Original%20Mix%29.mp3","pic":"http://jholmes.oss-cn-shanghai.aliyuncs.com/1%20HelloWorld/Avicii%20-%20The%20Nights%20%28Original%20Mix%29.png","lrc":"https:JH0lmes.github.io/uploads/lyrics/the-night.lrc"}]};
 				options.element = document.getElementById("aplayer2");
-				new APlayer(options);
+				var ap = new APlayer(options);
+				window.aplayers || (window.aplayers = []);
+				window.aplayers.push(ap);
 			</script>
 
 		
